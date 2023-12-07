@@ -1,1 +1,35 @@
-/*# sourceMappingURL=page.css.map */
+.section1 {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-color-white);
+}
+.section1__text {
+  color: var(--text-color-primary);
+  font-size: 40px;
+  width: 500px;
+  margin-left: 7.5%;
+}
+.section1__text h1 {
+  font-weight: 100;
+}
+.section1__text p {
+  font-size: 20px;
+  color: var(--text-color-secondary);
+  text-align: left;
+  margin: 15px 0;
+}
+.section1__image {
+  width: 50%;
+  height: 100%;
+}
+.section1__image div {
+  height: 100%;
+}
+.section1__image div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}/*# sourceMappingURL=page.css.map */
