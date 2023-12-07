@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  height: 80px;
+}
+.header .desktopmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .desktopmenu div {
+  display: flex;
+}
+.header .desktopmenu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+}
+.header .desktopmenu ul a {
+  padding: 30px 0 30px 0;
+  margin: 0 30px 0 30px;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: var(--text-color-secondary);
+}
+.header .desktopmenu ul a::after {
+  content: "";
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: var(--main-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+.header .desktopmenu ul a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}/*# sourceMappingURL=header.css.map */

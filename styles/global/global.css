@@ -1,4 +1,4 @@
-:root{
+:root {
   --main-color: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(42, 182, 217) 110%, rgb(0, 179, 255) 100%);
   --text-color-primary: rgb(42, 42, 73);
   --text-color-secondary: hsl(233, 8%, 62%);
@@ -6,36 +6,28 @@
   --background-color-gray: rgb(240, 240, 240);
 }
 
-
 * {
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-
 .page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
-  main{
-    flex-grow: 1;
-  }
+}
+.page main {
+  flex-grow: 1;
 }
 
-
-.container{
+.container {
   margin: 0 auto;
   width: 85%;
 }
 
-
-.invitebutton{
-  &:hover{
-    filter: saturate(150%) contrast(120%) opacity(90%);
-  }
+.invitebutton {
   background: var(--main-color);
   text-decoration: none;
   padding: 12px 32px 12px 32px;
@@ -43,3 +35,6 @@
   color: white;
   font-size: 13px;
 }
+.invitebutton:hover {
+  filter: saturate(150%) contrast(120%) opacity(90%);
+}/*# sourceMappingURL=global.css.map */
