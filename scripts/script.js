@@ -28,12 +28,12 @@ const Main = () => {
     },
     mobileMenu_close(){
       $mobileMenuNav.style.height = "0"
-      $mobileMenuList.style.left = "-120%"
+      $mobileMenuList.style.left = "-200%"
 
       //make menu back to the initial position
       setTimeout(() => {
         $mobileMenuList.style.display = "none"
-        $mobileMenuList.style.left = "120%"
+        $mobileMenuList.style.left = "200%"
       }, 280)
       $mobileMenuButtons.forEach((button) => {
         button.classList.toggle("mobilemenu__button--hidden")
