@@ -2,6 +2,9 @@
   display: flex;
   height: 80px;
 }
+.header .mobilemenu {
+  display: none;
+}
 .header .desktopmenu {
   display: flex;
   justify-content: space-between;
@@ -39,4 +42,57 @@
 .header .desktopmenu ul a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 80px;
+  }
+  .header .desktopmenu {
+    display: none;
+  }
+  .header .mobilemenu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+    align-items: center;
+  }
+  .header .mobilemenu > div .mobilemenu__button--hidden {
+    display: none;
+  }
+  .header .mobilemenu__nav {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 0;
+    background: rgba(0, 0, 0, 0.377);
+  }
+  .header .mobilemenu__nav__list {
+    position: absolute;
+    height: 257px;
+    left: 120%;
+    right: 0;
+    margin-top: 15px;
+    border-radius: 7px;
+    background-color: white;
+    transition: 0.3s;
+  }
+  .header .mobilemenu__nav__list li {
+    margin: 28px 0 28px 0;
+    text-align: center;
+    list-style: none;
+    border-radius: 5px;
+  }
+  .header .mobilemenu__nav__list li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-color-secondary);
+    display: block;
+  }
+  .header .mobilemenu .mobilemenu__button {
+    color: rgb(158, 158, 158);
+    background: none;
+    border: none;
+  }
 }/*# sourceMappingURL=header.css.map */
