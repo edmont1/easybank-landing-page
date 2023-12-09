@@ -48,7 +48,7 @@ $footerBackground: var(--text-color-primary);
           a {
             color: var(--text-color-secondary);
             text-decoration: none;
-
+            
             &:hover {
               filter: invert(53%) sepia(79%) saturate(4500%) hue-rotate(335deg)
                 brightness(100%) contrast(102%);
@@ -71,7 +71,56 @@ $footerBackground: var(--text-color-primary);
 
       p:nth-child(3) {
         font-size: 12px;
-        margin-top: 5px;
+        margin-top: -10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    .container {
+      text-align: center;
+      display: block;
+      height: initial;
+
+      .footer__links {
+        display: block;
+        width: 100%;
+
+        div {
+          display: block;
+
+          ul {
+            justify-content: center;
+            margin: 20px 0 20px 0;
+
+            li {
+              margin: 0 8px 0 8px;
+            }
+          }
+        }
+
+        > ul {
+          display: block;
+
+          li {
+            margin: 8px 0 8px 0;
+          }
+        }
+      }
+
+      .footer__copyright_div {
+        display: block;
+
+        a {
+          display: inline-block;
+          margin: 25px 0 25px 0;
+        }
+
+        p:nth-child(3){
+          margin-top: 5px;
+        }
       }
     }
   }
