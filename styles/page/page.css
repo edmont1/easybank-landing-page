@@ -64,6 +64,58 @@
   color: var(--text-color-secondary);
 }
 
+.section3 {
+  background-color: var(--background-color-white);
+  padding: 7% 0;
+  font-size: 18px;
+  color: var(--text-color-primary);
+}
+.section3 ul {
+  list-style: none;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+}
+.section3 ul li {
+  background-color: #fff;
+  border-radius: 5px;
+}
+.section3 ul li .card-image img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px 5px 0 0;
+}
+.section3 ul li a {
+  border-radius: 5px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.section3 ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--text-color-secondary);
+  background-color: var(--background-color-gray);
+  transform: scale(1.02);
+}
+.section3 ul li .card-text {
+  font-size: 18px;
+  padding: 30px 25px;
+}
+.section3 ul li .card-text p:nth-child(1) {
+  font-size: 12px;
+  color: var(--text-color-secondary);
+}
+.section3 ul li .card-text h4 {
+  margin: 15px 0;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--text-color-primary);
+}
+.section3 ul li .card-text p:nth-child(3) {
+  color: var(--text-color-secondary);
+}
+
 .mobile_background {
   display: none;
 }
